@@ -1,5 +1,3 @@
-# Task-managment-mean
-This is a task managment app build in mean stack
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.

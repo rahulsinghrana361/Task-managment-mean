@@ -1,0 +1,42 @@
+// This is where we'll put global styles and change variable values
+
+@import url('https://fonts.googleapis.com/css?family=lato:400,700|Nunito:400,700');
+
+$turquoise: #44ddd0;
+$green: #27d7a1;
+
+$light-green: #45f69e;
+
+$light: #f8f8f8;
+$dark-green: rgb(0,100,80);
+
+// update bulma's global variable
+
+$family-sans-serif: "Nunito", sans-serif;
+$primary-color: $green;
+
+$link: $light-green;
+
+// Update some of bulma's component variables
+
+$control-border-width:2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+
+html {
+    background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
