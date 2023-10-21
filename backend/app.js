@@ -18,7 +18,6 @@ app.use(express.json());
 const { List } = require('./db/models/list.model');
 const { Task } = require('./db/models/task.model');
 
-console.log(List,'aaaaaaaa');
 console.log(Task,'aaaaaaaa');
 
 
@@ -30,6 +29,7 @@ console.log(Task,'aaaaaaaa');
 // Purpose: Get all lists
 
 app.get('/lists', (req, res) => {
+    console.log(List,'aaaaaaaa');
     // We want to return an array of all the lists in the database
     List.find({}).then((lists) => {
         res.send(lists);
@@ -40,7 +40,7 @@ app.get('/lists', (req, res) => {
 // Purpose: Create a list
 
 app.post("/lists", async (req, res) => {
-    console.log("Inside post");
+    console.log("Inside post",req.body.title);
   
     const data = new List({
       title: req.body.title
